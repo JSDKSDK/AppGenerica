@@ -1,0 +1,23 @@
+<div class="sidebar">
+    <div class="sidebar-header">
+      <h3 class="brand p-3">
+        <span class="titulo">Admin </span>
+      </h3>
+    </div>
+  
+    <ul id="accordion" class="accordion">
+      <li *ngFor="let menu of menus; let i = index" [class.active]="menu.active">
+        <div class="menu" (click)="toggle(i); goTo(menu.url)">
+          <em [class]="menu.iconClass"></em>
+          {{ menu.name }}
+          <em *ngIf="menu.submenu.length > 0" class="fa fa-chevron-down"></em>
+        </div>
+        <ul class="submenu" #submenu [style.height.px]="menu.active ? submenu.scrollHeight : 0">
+          <li *ngFor="let submenu of menu.submenu">
+            <a (click)="goTo(submenu.url)">{{ submenu.name }}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  

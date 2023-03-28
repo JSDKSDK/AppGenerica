@@ -1,0 +1,29 @@
+header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: calc(100% - 10%);
+    background-color: #fff;
+    height: 60px;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    left: 12rem;
+}
+.user-wrapper{/*estilos del avatar en la clase usuario en la barra superior*/
+    display: flex;
+    align-items: center;
+
+}
+
+.user-wrapper img {/*estilos de la imagen del avatar en la clase usario*/
+    border-radius: 50%; /*para dejar redonda la imagen del avatar*/
+    margin-right: 1rem;
+}
+
+.user-wrapper small {
+    display: inline-block;
+    color: var(--text-grey);
+}

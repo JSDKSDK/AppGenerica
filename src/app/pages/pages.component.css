@@ -1,0 +1,29 @@
+.nav-top-container {
+  height: var(--nav-top-height);
+  left: calc(var(--menu-width) + 12px);
+  right: 0;
+}
+
+.menu-container {
+  width: var(--menu-width);
+}
+
+.main-container {
+  padding-left: var(--menu-width);
+  background: #f1f5f9;
+}
+
+.content-container {
+  padding-top: var(--nav-top-height);
+}
+
+.side-user {
+  top: 57px;
+  right: 1.8vw;
+  padding: 1rem;
+  background: #ffffff;
+  color: #33313b;
+  position: fixed;
+  z-index: 100;
+  border: 1px solid #eaeaea;
+}

@@ -1,0 +1,26 @@
+<div class="container-12">
+    <div class="row">
+
+        <div class="col-12 p-2">
+            <div class="row">
+                <div class="col-5 d-vertical w-100 ">
+                    <a [ngStyle]="{'background-image': 'url( /assets/img/avatar.png)'}" class="picture-user-size"></a>
+                </div>
+                
+            </div>
+        </div>
+        <ul class="lista">
+            <li role="separator" class="divider"></li>
+            <li >
+                <i class="fas fa-user icono"></i> {{nombre + " " +apellido }}
+            </li>
+            <li >
+                <i class="fas fa-envelope-square icono"></i>  {{email}}
+            </li>
+            <li role="separator" class="divider"></li>
+            <li (click)="cerrarSesion()" >
+                <i class="fas fa-power-off icono" ></i> Cerrar Sesión
+            </li>
+        </ul>
+    </div>
+</div> 

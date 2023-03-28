@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <nav class="navbar navbar-expand navbar-dark position-fixed top-0 start-0 bottom-0 me-auto menu-container">
+      <app-menu></app-menu>
+    </nav>
+    <div class="container-fluid main-container">
+      <div class="row position-fixed nav-top-container px-2">
+        <div class="col text-center mt-auto mb-auto">
+          <app-navbar></app-navbar>
+          <div *ngIf="mostrarSideUser">
+            <app-sideuser [@flipInXAnimation]="mostrarSideUser" (click)="clickSides($event)" class="side-user rounded shadow"></app-sideuser>
+          </div>
+        </div>
+      </div>
+      <div class="row content-container">
+        <div class="col ps-4 pe-0">
+          <app-contenido></app-contenido>
+        </div>
+      </div>
+    </div>
+  </div>
+  
